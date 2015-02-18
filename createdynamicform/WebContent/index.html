@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Create Dynamic form Using JavaScript - Demo Preview</title>
+<meta name="robots" content="noindex, nofollow" />
+
+<script src="js/form.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<div class ="main_content">
+ <!-- 
+----------------------------------------------------------------------------------------
+Header div.
+----------------------------------------------------------------------------------------
+-->
+<div class="first"><p><a href="http://www.formget.com/app/"><img src="logo.png" id="logo"/></a> Online form builder. </p></div>
+
+<!--
+--------------------------------------------------------------------------------------
+This div is for the buttons. When user click on buttons, respective field will appear.
+---------------------------------------------------------------------------------------
+-->
+
+<div class="two">
+<h4>Frequently Used Form Fields</h4>
+<button onclick="nameFunction()">Name</button><br/>
+<button onclick="emailFunction()">Email</button><br/>
+<button onclick="contactFunction()">Contact</button><br/>
+<button onclick="textareaFunction()">Message</button>
+<button onclick="resetElements()">Reset</button>
+</div>
+<!-- 
+----------------------------------------------------------------------------------------
+This div is meant to display final form.
+----------------------------------------------------------------------------------------
+-->
+
+<div class="three">
+<h2>Your Dynamic Form!</h2>
+<form action="#" method="get" id="mainform">
+<span id="myForm">
+</span>
+<p></p>
+<input type="submit" value="Submit"></input>
+</form>
+</div>
+ <!-- 
+----------------------------------------------------------------------------------------
+Footer div.
+----------------------------------------------------------------------------------------
+-->
+ <div class="four">
+ <p>2014 <a href="http://www.formget.com/app/"><img src="logo.png"/></a> All rights reserved.</p>
+ </div>
+</div>
+
+</body>
+</html>
