@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+	<struts>
+		 <package name="abc" extends="struts-default">
+		 
+		 		<action name="insert" class="com.action.StudentAction"  method="insert">
+		 		<interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+					<result name="success">studentDetails.jsp</result>
+					<result name="error">error.jsp</result>
+				</action>
+			
+				<action name="studentDetails" class="com.action.StudentAction"  method="fetch">
+					<result name="success">studentDetails.jsp</result>
+					<result name="error">error.jsp</result>
+				</action>
+				
+				<action name="del" class="com.action.StudentAction"  method="delete">
+					<result name="success">studentDetails.jsp</result>
+					<result name="error">error.jsp</result>
+				</action>
+				
+				<action name="update" class="com.action.StudentAction" method="edit">
+				<interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+					<result name="success">update.jsp</result>
+				</action>
+				
+				<action name="updates" class="com.action.StudentAction" method="update">
+					<result name="success">studentDetails.jsp</result>
+				</action>
+				
+				
+				<!--<action name="insert" class="com.action.StudentAction">
+					<interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+					<result name="success">insertData.jsp</result>
+				</action>
+				
+				<action name="updates" class="com.action.StudentAction">
+					<interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+					<result name="success">update.jsp</result>	
+					
+				</action>
+				
+				
+				
+		 --></package>
+		 
+		 
+		 
+		 
+	</struts>
