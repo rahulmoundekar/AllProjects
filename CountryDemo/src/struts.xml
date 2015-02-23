@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	<struts>
+	<package name="xyz" extends="struts-default">
+	<action name="log" class="com.action.CityAction" method="getcity">
+	<result name="hi">success.jsp</result>
+	</action>
+	<action name="a" class="com.action.CityAction" method="ajaxCal">
+	</action>
+	<action name="b" class="com.action.CityAction" method="ajaxCal1">
+	
+	</action>
+	
+	
+	</package>
+	</struts>
